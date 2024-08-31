@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirect to beranda.php if user tries to access ambon folder directly
+RewriteCond %{REQUEST_URI} ^/ambon/?$
+RewriteRule ^(.*)$ beranda.php [L,R=302]
+
+# Prevent directory listing
+Options -Indexes
+
+ErrorDocument 403 /jastip/index.php
+

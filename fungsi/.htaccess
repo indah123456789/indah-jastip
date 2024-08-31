@@ -1,0 +1,20 @@
+# Blokir semua akses ke folder ini, kecuali login.php dan logout.php
+<Files "login.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files "logout.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files "upload_profil.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Blokir semua file lainnya
+Order allow,deny
+Deny from all
+
